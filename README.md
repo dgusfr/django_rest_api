@@ -32,7 +32,9 @@ API desenvolvida em Python com o framework Django. E uma simples API de listagem
 
 ## Descrição
 
-Este projeto consiste em uma API RESTful desenvolvida utilizando o framework Django e o Django Rest Framework. Ele permite a busca e adição de dados relacionados a itens.
+Este projeto consiste em uma API RESTful desenvolvida utilizando o framework Django e o Django Rest Framework. 
+
+Ele permite a busca e adição de dados relacionados a itens.
 
 ## Funcionalidades
 
