@@ -1,6 +1,6 @@
 # Django Rest API
 
-API desenvolvida em Python com o framework Django. 
+API desenvolvida em Python com o framework Django. E uma simples API de listagem e criaçao mas exemplificam bem os conceitos de uma API.
 
 ## Logo
 
