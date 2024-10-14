@@ -1,6 +1,6 @@
 # Django Rest API
 
-API desenvolvoda em Pyhton
+API desenvolvida em Python com o framework Django. 
 
 ## Logo
 
