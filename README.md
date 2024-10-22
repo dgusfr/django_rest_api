@@ -54,6 +54,20 @@ Ele permite a busca e adição de dados relacionados a itens.
 3. Execute as migrações: `python manage.py makemigrations` e `python manage.py migrate`
 4. Inicie o servidor: `python manage.py runserver`
 
+Você pode realizar as operações basicas na API utilizando o arquivo rew_tests.py ou fazendo suas proprias requisições para a URL local http://127.0.0.1:8000.
+
+Note que na nossa lista de produtos a baixo esta começando com o id 3 porque os id 1 e 2 foram deletados usando o metodo HTTP DELETE:
+
+<div align="center">
+  <img src="img/logo2.png" alt="Imagem do Projeto" width="900">
+</div>
+
+e os ultimo itens adicionados são os itens completos do nosso stock
+
+<div align="center">
+  <img src="img/logo3.png" alt="Imagem do Projeto" width="900">
+</div>
+
 ## Estrutura do Projeto
 
 A estrutura do projeto está organizada da seguinte forma:
