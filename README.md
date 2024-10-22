@@ -18,7 +18,6 @@ Essa API facilita a administração de produtos em lojas físicas ou e-commerce,
 
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Status](#status)
-- [Descrição](#descrição)
 - [Funcionalidades](#funcionalidades)
 - [Como Usar](#como-usar)
 - [Estrutura do Projeto](#estrutura-do-projeto)
@@ -27,20 +26,17 @@ Essa API facilita a administração de produtos em lojas físicas ou e-commerce,
 ## Tecnologias Utilizadas
 
 <div style="display: flex; flex-direction: row;">
+<div style="margin-right: 20px; display: flex; justify-content: flex-start;">
+    <img src="img/python.png" alt="Logo Django" width="200"/>
+  </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/python.png" alt="Logo Django" width="100"/>
+    <img src="img/django.png" alt="Logo Django" width="250"/>
   </div>
 </div>
 
 ## Status
 
 ![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
-
-## Descrição
-
-Este projeto consiste em uma API RESTful desenvolvida utilizando o framework Django e o Django Rest Framework.
-
-Ele permite a busca e adição de dados relacionados a itens.
 
 ## Funcionalidades
 
