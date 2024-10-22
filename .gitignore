@@ -1,7 +1,6 @@
 # Byte-compiled / cached files
 __pycache__/
-*.py[cod]
-*.pyo
+*.pyc
 
 # Django specific
 db.sqlite3
