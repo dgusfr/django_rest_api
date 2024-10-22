@@ -1,6 +1,12 @@
 # API de Cadastro de Produtos no Varejo
 
-API desenvolvida em Python com o framework Django. E uma simples API de listagem e criaçao mas exemplificam bem os conceitos de uma API.
+Essa é uma API de Cadastro de Produtos no Varejo simples e eficiente para gerenciar o estoque de produtos em um depósito.
+
+Ela oferece funcionalidades para criar, listar, atualizar e excluir produtos, permitindo manter o controle sobre itens como nome, preço, descrição, categoria e quantidade em estoque.
+
+A API é construída utilizando Django e Django REST Framework, suportando operações CRUD completas através de endpoints REST.
+
+Essa API facilita a administração de produtos em lojas físicas ou e-commerce, garantindo a integridade dos dados e o fácil acesso às informações do depósito.
 
 ## Logo
 
