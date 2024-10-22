@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "http://127.0.0.1:8000/" 
+BASE_URL = "http://127.0.0.1:8000/"  # URL base da API
 
 def get_all_items():
     response = requests.get(f"{BASE_URL}")
@@ -10,6 +10,7 @@ def get_all_items():
         print("Items:", items)
     except requests.exceptions.JSONDecodeError:
         print("Resposta não contém JSON ou ocorreu um erro.")
+    return response.json() if response.status_code == 200 else []
 
 def create_item(data):
     response = requests.post(f"{BASE_URL}add/", json=data)
@@ -41,17 +42,40 @@ def update_item(item_id, data, partial=True):
         print("Resposta não contém JSON ou ocorreu um erro.")
 
 if __name__ == "__main__":
-    new_item = {"name": "Item Teste"}
+    # Teste: criar um novo item
+    new_item = {
+        "name": "Produto Teste 3",
+        "price": 29.99,
+        "description": "Um produto de teste para o sistema de depósito.",
+        "category": "Eletrodomésticos",
+        "stock": 100
+    }
     create_item(new_item)
 
-    get_all_items()
+    # Teste: listar todos os itens
+    items = get_all_items()
 
-    updated_data_partial = {"name": "Item Teste Atualizado"}
-    update_item(1, updated_data_partial, partial=True)
+    # Atualizar ou excluir um item existente, se encontrado
+    if items:
+        item_id = items[0]['id']
+        # Teste: atualizar um item (parcialmente)
+        updated_data_partial = {"stock": 80}
+        update_item(item_id, updated_data_partial, partial=True)
 
-    updated_data_full = {"name": "Item Teste Atualizado Completo"}
-    update_item(1, updated_data_full, partial=False)
+        # Teste: atualizar um item (completo)
+        updated_data_full = {
+            "name": "Produto Teste Atualizado",
+            "price": 24.99,
+            "description": "Produto atualizado com nova descrição e preço.",
+            "category": "Eletrônicos",
+            "stock": 50
+        }
+        update_item(item_id, updated_data_full, partial=False)
 
-    delete_item(1)
+        # Teste: deletar o item
+        delete_item(item_id)
+    else:
+        print("Nenhum item encontrado para atualizar ou deletar.")
 
+    # Teste: listar todos os itens novamente
     get_all_items()
