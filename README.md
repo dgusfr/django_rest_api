@@ -1,4 +1,4 @@
-# Django Rest API
+# API de Cadastro de Produtos no Varejo
 
 API desenvolvida em Python com o framework Django. E uma simples API de listagem e criaçao mas exemplificam bem os conceitos de uma API.
 
@@ -168,6 +168,73 @@ body : {
   "description": "Descrição do novo produto.",
   "category": "Alimentos",
   "stock": 50,
+  "created": "2024-10-22T16:32:00.245504Z"
+}
+```
+
+#### 3. `DELETE http://127.0.0.1:8000/delete/id/`
+
+#### Resposta esperada:
+
+```json
+response : {
+  "status": 204,
+  "message": "Item deletado com sucesso."
+}
+```
+
+#### 4. `PATCH http://127.0.0.1:8000/update/id/`
+
+```json
+headers : {
+"Content-Type": "application/json"
+}
+
+body : {
+"stock": 80
+}
+```
+
+#### Resposta esperada:
+
+```json
+{
+  "id": 2,
+  "name": "Novo Produto",
+  "price": "19.99",
+  "description": "Descrição do novo produto.",
+  "category": "Alimentos",
+  "stock": 80,
+  "created": "2024-10-22T16:32:00.245504Z"
+}
+```
+
+#### 4. `PUT http://127.0.0.1:8000/update/id/`
+
+```json
+headers : {
+  "Content-Type": "application/json"
+}
+
+body : {
+  "name": "Produto Atualizado",
+  "price": 29.99,
+  "description": "Descrição atualizada do produto.",
+  "category": "Eletrônicos",
+  "stock": 100
+}
+```
+
+#### Resposta esperada:
+
+```json
+{
+  "id": 2,
+  "name": "Produto Atualizado",
+  "price": "29.99",
+  "description": "Descrição atualizada do produto.",
+  "category": "Eletrônicos",
+  "stock": 100,
   "created": "2024-10-22T16:32:00.245504Z"
 }
 ```
