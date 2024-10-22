@@ -1,0 +1,31 @@
+# Byte-compiled / cached files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django specific
+db.sqlite3
+*.log
+
+# Environment variables
+.env
+
+# Django migrations
+*/migrations/*
+
+# Media / static files
+staticfiles/
+media/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Virtual environment
+venv/
+.env/
